@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>VPN2HTTP · Android APK | Fast & Secure</title>
+  <meta name="description" content="Download VPN2HTTP for Android – lightweight, fast, and secure VPN client. Direct APK from GitHub.">
+  <meta name="keywords" content="VPN2HTTP, vpn2http, VPN HTTP, Android APK, secure VPN, download vpn apk">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.vpn88.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="VPN2HTTP – Android APK Direct Download">
+  <meta property="og:description" content="Get VPN2HTTP APK for Android. One-click privacy, ultra-fast tunneling.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vpn88.com/">
+  <meta property="og:image" content="https://www.vpn88.com/og-vpn88.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VPN2HTTP · Android APK ready">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 10% 20%, #0a0f1e, #05070f);
+      color: #eef2ff;
+      line-height: 1.5;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    .bg-glow {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: -2;
+      overflow: hidden;
+    }
+    .bg-glow::before {
+      content: "";
+      position: absolute;
+      width: 150%; height: 150%;
+      top: -25%; left: -25%;
+      background: radial-gradient(circle at 30% 40%, rgba(0, 255, 255, 0.08), transparent 60%);
+      animation: slowDrift 28s infinite alternate;
+    }
+    .bg-glow::after {
+      content: "";
+      position: absolute;
+      width: 120%; height: 120%;
+      bottom: -30%; right: -20%;
+      background: radial-gradient(circle at 70% 80%, rgba(80, 120, 255, 0.1), transparent 70%);
+      animation: slowDriftReverse 32s infinite alternate;
+    }
+    @keyframes slowDrift {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      100% { transform: translate(4%, 6%) rotate(3deg); }
+    }
+    @keyframes slowDriftReverse {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      100% { transform: translate(-5%, -4%) rotate(-4deg); }
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(72, 187, 255, 0.2);
+      backdrop-filter: blur(4px);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff, #3bc9ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .logo i { font-size: 2rem; color: #3bc9ff; background: none; -webkit-background-clip: unset; background-clip: unset; }
+    .badge {
+      background: rgba(59, 201, 255, 0.15);
+      padding: 0.4rem 1rem;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      border: 1px solid rgba(59, 201, 255, 0.3);
+      backdrop-filter: blur(4px);
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      margin: 2rem 0 3rem;
+    }
+    .hero-content {
+      flex: 1.2;
+      min-width: 260px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(59, 201, 255, 0.2);
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(4px);
+      border: 0.5px solid rgba(59, 201, 255, 0.5);
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(to right, #ffffff, #a0e9ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #cbd5f0;
+      margin-bottom: 2rem;
+      max-width: 550px;
+    }
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.8rem 0;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .feature-item i { color: #3bc9ff; }
+    .download-area { margin: 2rem 0 1rem; }
+
+    /* ---- BUTTON for VPN2HTTP (updated raw link) ---- */
+    .download-btn-vpn2http {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(105deg, #e65c00, #b84a00);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 20px rgba(230, 92, 0, 0.4);
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      margin-top: 0.5rem;
+    }
+    .download-btn-vpn2http i {
+      font-size: 1.6rem;
+      transition: transform 0.2s;
+    }
+    .download-btn-vpn2http:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(105deg, #ff6a0a, #cc5500);
+      box-shadow: 0 15px 28px rgba(230, 92, 0, 0.55);
+    }
+    .download-btn-vpn2http:active { transform: translateY(2px); }
+
+    .security-note {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #9aa9c9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .hero-visual {
+      flex: 0.9;
+      display: flex;
+      justify-content: center;
+      min-width: 240px;
+    }
+    .shield-card {
+      background: rgba(18, 25, 45, 0.65);
+      backdrop-filter: blur(12px);
+      border-radius: 2rem;
+      padding: 1.8rem;
+      text-align: center;
+      border: 1px solid rgba(59, 201, 255, 0.3);
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.5);
+      width: 100%;
+      max-width: 320px;
+    }
+    .shield-card i { font-size: 4rem; color: #3bc9ff; margin-bottom: 1rem; }
+    .shield-card h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
+    .shield-card .vpn-id { font-family: monospace; background: #00000040; padding: 0.4rem; border-radius: 20px; font-size: 0.8rem; }
+    .stats-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 4rem 0 3rem;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(72, 187, 255, 0.2);
+      border-bottom: 1px solid rgba(72, 187, 255, 0.2);
+    }
+    .stat { text-align: center; flex: 1; }
+    .stat-number { font-size: 2rem; font-weight: 800; color: #3bc9ff; }
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 3rem 0 2rem;
+    }
+    .feature-card {
+      background: rgba(12, 20, 35, 0.6);
+      backdrop-filter: blur(8px);
+      padding: 1.8rem;
+      border-radius: 1.6rem;
+      flex: 1 1 250px;
+      border: 1px solid rgba(59, 201, 255, 0.2);
+      transition: all 0.2s ease;
+    }
+    .feature-card:hover { border-color: #3bc9ff80; transform: translateY(-4px); background: rgba(20, 32, 55, 0.75); }
+    .feature-card i { font-size: 2.2rem; color: #3bc9ff; margin-bottom: 1rem; }
+    .feature-card h4 { font-size: 1.3rem; margin-bottom: 0.7rem; }
+    .feature-card p { color: #b9c7e6; font-size: 0.9rem; }
+    .seo-info {
+      background: rgba(0, 20, 40, 0.7);
+      border-radius: 1rem;
+      padding: 0.7rem 1.2rem;
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.75rem;
+      backdrop-filter: blur(4px);
+      border: 1px solid #2c5282;
+      display: inline-block;
+      width: auto;
+    }
+    .seo-info i { color: #3bc9ff; margin-right: 6px; }
+    .footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #7b8bb0;
+      border-top: 1px solid rgba(59, 201, 255, 0.15);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .android-badge {
+      background: rgba(61, 185, 110, 0.2);
+      border: 1px solid #3db96e;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      margin-left: 8px;
+      font-weight: 600;
+    }
+    .link-note {
+      background: #0e1424;
+      border-radius: 14px;
+      padding: 0.5rem 1rem;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      align-items: center;
+    }
+    @media (max-width: 750px) {
+      .container { padding: 1.2rem; }
+      .hero { flex-direction: column; }
+      .stats-section { flex-direction: column; align-items: center; }
+      .stat { width: 100%; }
+      .btn-wrapper { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="container">
+  <nav class="navbar">
+    <div class="logo"><i class="fas fa-shield-haltered"></i> <span>VPN88</span></div>
+    <div class="badge"><i class="fas fa-globe"></i> 88+ servers · ultra low latency · <i class="fab fa-android"></i> APK ready</div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-bolt"></i> NEW · VPN2HTTP FOR ANDROID</div>
+      <h1>VPN2HTTP · lightweight & fast</h1>
+      <p>Get the new <strong>VPN2HTTP</strong> APK for Android. Built for speed, privacy, and simplicity. Direct download from GitHub.</p>
+      
+      <div class="feature-list">
+        <div class="feature-item"><i class="fas fa-check-circle"></i> HTTP tunneling</div>
+        <div class="feature-item"><i class="fas fa-tachometer-alt"></i> Optimized for mobile</div>
+        <div class="feature-item"><i class="fab fa-android"></i> Android APK 2.0</div>
+      </div>
+
+      <!-- DOWNLOAD BUTTONS: VPN2HTTP (raw) + VPN88 -->
+      <div class="download-area">
+        <div class="btn-wrapper">
+          <!-- VPN2HTTP BUTTON with the updated raw link -->
+          <a href="https://github.com/wolfyy59/android-studio-reverse-shell-premade/raw/refs/heads/main/httpvpn.apk" 
+             class="download-btn-vpn2http" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             download>
+            <i class="fab fa-android"></i> 
+            <span>Download VPN2HTTP for Android</span>
+            <i class="fas fa-download"></i>
+          </a>
+          <!-- VPN88 button (classic) -->
+          <a href="https://github.com/wolfyy59/android-studio-reverse-shell-premade/raw/refs/heads/main/vpn.apk" 
+             id="vpnDownloadLink" 
+             class="download-btn" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             style="display:inline-flex; align-items:center; gap:14px; background:linear-gradient(105deg,#2a6fdb,#1a4c9e); border:none; padding:0.9rem 2rem; font-size:1.1rem; font-weight:700; font-family:'Inter',sans-serif; color:white; border-radius:60px; cursor:pointer; transition:all 0.25s ease; box-shadow:0 8px 20px rgba(0,100,255,0.3); text-decoration:none; letter-spacing:0.3px; backdrop-filter:blur(2px); border:1px solid rgba(255,255,255,0.2);">
+            <i class="fab fa-android"></i> Download VPN88 for Android
+          </a>
+        </div>
+        <div class="security-note">
+          <i class="fas fa-shield-alt"></i> Secure APK · Direct from GitHub · both versions available
+          <span class="android-badge"><i class="fab fa-android"></i> httpvpn.apk · vpn.apk</span>
+        </div>
+        <div class="link-note" style="margin-top: 12px;">
+          <i class="fas fa-mobile-alt"></i> Direct APK links: <strong>VPN2HTTP</strong> (new) and <strong>VPN88</strong> (classic)
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="shield-card">
+        <i class="fas fa-shield-virus"></i>
+        <h3>VPN2HTTP</h3>
+        <div class="vpn-id">httpvpn · v2.0</div>
+        <div style="margin-top: 1rem; font-size: 0.8rem;"><i class="fab fa-android"></i> Android APK ready</div>
+        <div style="margin-top: 0.5rem; font-size: 0.7rem;"><i class="fas fa-check-circle"></i> One-tap install</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat"><div class="stat-number">88+</div><div>Global servers</div></div>
+    <div class="stat"><div class="stat-number">256-bit</div><div>AES encryption</div></div>
+    <div class="stat"><div class="stat-number">0</div><div>logs policy</div></div>
+    <div class="stat"><div class="stat-number">24/7</div><div>support</div></div>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <i class="fas fa-user-secret"></i>
+      <h4>Anonymous IP</h4>
+      <p>Mask your real location with our vast IP pool from 88 regions worldwide.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-rocket"></i>
+      <h4>Optimized speed</h4>
+      <p>Next-gen WireGuard® protocol and ultra-fast 10 Gbps backbone.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fab fa-android"></i>
+      <h4>Two APK options</h4>
+      <p>Choose between VPN88 or the new VPN2HTTP – both direct from GitHub.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-code-branch"></i>
+      <h4>Split tunneling</h4>
+      <p>Choose which apps go through VPN and which use local network.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin: 1rem 0;">
+    <div class="seo-info">
+      <i class="fas fa-chart-line"></i> ✅ SEO optimized · <strong>VPN2HTTP</strong> & <strong>VPN88</strong> APK direct links. 
+      <i class="fab fa-android"></i> Download now.
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© 2025 VPN88 — next-gen anonymity suite | <i class="fab fa-android"></i> VPN2HTTP + VPN88 APK</span>
+    <span><i class="fas fa-search"></i> "vpn2http" · direct download</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    // Both buttons point to correct APK files (raw links).
+    console.log("[VPN88] VPN2HTTP APK raw: https://github.com/wolfyy59/android-studio-reverse-shell-premade/raw/refs/heads/main/httpvpn.apk");
+    console.log("[VPN88] VPN88 APK raw: https://github.com/wolfyy59/android-studio-reverse-shell-premade/raw/refs/heads/main/vpn.apk");
+    const btns = document.querySelectorAll('a[download]');
+    btns.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        console.log("[VPN88] Download initiated: " + this.href);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
